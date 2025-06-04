@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moses' Birthday 2025🎉</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="static/flaticon.webp">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .countdown span {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body class="bg-pink-50 text-gray-800">
+ <!-- Responsive Navigation -->
+<header class="bg-white shadow fixed w-full z-50 top-0">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+    <h1 class="text-xl font-bold text-purple-700">Moses' 2025 Birthday</h1>
+
+    <!-- Hamburger Button for Mobile -->
+    <button class="md:hidden" onclick="document.getElementById('mobileMenu').classList.toggle('hidden')">
+      <svg class="w-6 h-6 text-purple-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex space-x-4 text-sm md:text-base">
+      <a href="#countdown" class="text-purple-700 font-semibold"><i class="fas fa-home mr-1"></i>Home</a>
+      <a href="#about" class="hover:text-purple-600"><i class="fas fa-user mr-1"></i>About</a>
+      <a href="#memories" class="hover:text-purple-600"><i class="fas fa-image mr-1"></i>Memories</a>
+      <a href="#people" class="hover:text-purple-600"><i class="fas fa-users mr-1"></i>People</a>
+      <a href="#wishes" class="hover:text-purple-600"><i class="fas fa-comment-dots mr-1"></i>Wishes</a>
+      <a href="#wishlist" class="hover:text-purple-600"><i class="fas fa-gift mr-1"></i>Gifts</a>
+      <a href="#contact" class="hover:text-purple-600"><i class="fas fa-envelope mr-1"></i>Contact</a>
+    </nav>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="md:hidden hidden bg-white px-4 py-4 space-y-2 shadow">
+    <a href="#countdown" class="block text-purple-700 font-semibold"><i class="fas fa-home mr-1"></i>Home</a>
+    <a href="#about" class="block hover:text-purple-600"><i class="fas fa-user mr-1"></i>About</a>
+    <a href="#memories" class="block hover:text-purple-600"><i class="fas fa-image mr-1"></i>Memories</a>
+    <a href="#people" class="block hover:text-purple-600"><i class="fas fa-users mr-1"></i>People</a>
+    <a href="#wishes" class="block hover:text-purple-600"><i class="fas fa-comment-dots mr-1"></i>Wishes</a>
+    <a href="#wishlist" class="block hover:text-purple-600"><i class="fas fa-gift mr-1"></i>Gifts</a>
+    <a href="#contact" class="block hover:text-purple-600"><i class="fas fa-envelope mr-1"></i>Contact</a>
+  </div>
+</header>
+
+
+  <div class="pt-20"></div>
+
+  <!-- Countdown Section -->
+
+  <section id="countdown" class="relative h-screen flex flex-col justify-center items-center text-center">
+    <!-- Background Image -->
+    <img src="static/b1.jpeg" alt="Moses Birthday" class="absolute inset-0 w-full h-full object-cover z-0" />
+    
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black bg-opacity-30 z-10"></div>
+    
+    <!-- Content -->
+    <div class="relative z-20 text-white animate-fade-in-up">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4 animate-bounce">Happy  Birthday Moses!❤️🎂</h1>
+      <p class="mb-6 text-lg md:text-xl animate-pulse">Countdown to 5th June:</p>
+      <div id="countdown-timer" class="countdown flex justify-center space-x-6 mb-8"></div>
+      <p class="text-lg md:text-xl mb-4">Wanna know more about me?</p>
+      
+     <!-- <a href="talk-to-moses.html" target="_self" class="inline-block mb-4 px-6 py-3 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg transition duration-300">
+        Text me on WhatsApp
+      </a>  -->
+      
+
+       <a href="https://wa.me/254793589963" 
+              target="_blank" 
+              onclick="speakMessage()" 
+              class="inline-block mb-4 px-6 py-3 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg transition duration-300">
+              Text me on WhatsApp
+       </a>
+    
+    <!-- Buy Me a Cake Button -->
+    <button onclick="togglePopup()" class="inline-block mb-4 bg-yellow-500 hover:bg-yellow-600 text-white py-3 px-6 rounded-full text-lg">
+        🎂 Buy Me a Cake
+    </button>
+    
+
+<!-- Hidden Popup -->
+<div id="cakePopup" class="hidden fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
+  <div class="bg-white text-black p-8 rounded-2xl shadow-2xl max-w-md text-center relative">
+    <button onclick="togglePopup()" class="absolute top-2 right-2 text-gray-600 hover:text-black text-2xl">&times;</button>
+    <img src="static/cake.jpg" alt="Cake" class="w-32 h-32 mx-auto mb-4 rounded-full border-4 border-yellow-500">
+    <h3 class="text-2xl font-bold mb-2">My M-PESA Numbers 📲</h3>
+    <p class="mb-1"><strong>0113229108  - Moses Kuria</strong></p>
+    <p class="mb-4"><strong>0793589963   - Grace Kuria</strong></p>
+    <p>All the Numbers are Mine</p>
+    <p class="text-green-700 font-medium">A little appreciation goes a long way. God bless you abundantly 🙏❤️</p>
+  </div>
+</div>
+
+    </div>
+  </section>
+  
+  <style>
+  @keyframes fade-in-up {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-fade-in-up {
+    animation: fade-in-up 1.5s ease-out;
+  }
+  </style>
+  
+
+  
+
+
+   <!-- <section id="countdown" class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-300">
+    <h1 class="text-4xl md:text-6xl font-bold text-purple-900 mb-4 animate-bounce">Happy Birthday Moses! 🎂</h1>
+    <p class="mb-6 text-lg md:text-xl text-purple-800">Countdown to 5th June:</p>
+    <div id="countdown-timer" class="countdown flex justify-center space-x-6 text-purple-900 mb-8"></div>
+    <div class="w-40 h-40 md:w-60 md:h-60 rounded-full overflow-hidden border-4 border-white shadow-xl">
+      <img src="static/Moses.jpg" alt="Moses Birthday" class="w-full h-full object-cover" />
+    </div>
+  </section>
+  -->
+
+  <!-- About Me Section -->
+<section id="about" class="py-16 bg-cover bg-center" style="background-image: url('static/b1.jpeg');">
+  <div class="w-[100%] mx-auto px-4 bg-black bg-opacity-50 py-10 rounded-lg">
+    <h2 class="text-4xl font-bold text-center text-white mb-6">About Me</h2>
+    <h4 class="text-xl md:text-2xl font-semibold text-center text-purple-300 italic mb-8 max-w-3xl mx-auto">
+      Jeremiah 29:11 - "For I know the plans I have for you,” declares the LORD,
+      “plans to prosper you and not to harm you, plans to give you hope and a future."
+    </h4>
+
+    <p class="text-center text-lg text-white mb-10">Hi, My name is Moses Njuguna, born on June 5th. Here’s a little story about my journey...</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-white">
+
+       <!-- Left Column - Personal Story -->
+     <div class="space-y-6 text-justify max-w-prose mx-auto">
+      <h3 class="text-2xl font-semibold mb-2 text-yellow-500">My Background</h3>
+        <p class="text-xl leading-relaxed">
+
+         I was born  on 5<sup>th</sup> June a few years back and raised in Gatitu,Kandara - Murang'a County by my lovely parents. <br>
+         It have  really been a struggle since then but I thank God for keeping me alive upto now.<br>
+         Growing up, I was raised in a Christian home, deeply rooted in the teachings and values of the Presbyterian Church of East Africa (PCEA) Warutara. <br>
+         Not to leave behind I was baptized in 2009 at PCEA Warutara, a significant moment in my life that solidified my faith and commitment to my spiritual journey. Growing up in a religious environment, this event further deepened my connection with my values and beliefs.<br>
+         The Godliness foundation shaped my character and continues to guide many of my life choices today.<br>
+         I joined Gatitu Primary School in the year 2009 at my village  and i'm glad I completed my primary education in the year 2017 in the midst of other students.<br>
+         I later Joined Njumbi High School the following year - 2018 and thats where I discovered my passion for technology.<br>
+         After completing my secondary education in 2022 ,I felt unsure about which course to pursue and which institution to attend.<br>
+         After careful consideration, I decided to join Zetech University in September 2022. Thanks to
+        <a href="https://www.linkedin.com/in/esther-w-mwangi?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank" class="text-red-600 hover:text-blue-800 font-semibold">
+           Esther Mwangi
+        </a> for helping out.
+        <br>
+        Since then, It’ve been on an exciting journey to explore the world of tech and development with the help of my friends and  my lecturers.<br>
+        Um Looking back, I am proud to be an alumni and grateful for the experiences and knowledge I gained during my time there <br>
+         
+        Truly God has good plans for me 🥺🤍<br>
+        </p>
+        <p class="text-red-600 font-semibold text-xl italic">
+          "But those who hope in the Lord will renew their strength. They will soar on wings like eagles; they will run and not grow weary, they will walk and not be faint."  
+          <span class="text-gray-500">- Isaiah 40:31</span>
+        </p>
+        
+      </div>
+
+
+        <!-- Right Column - Tech Journey -->
+<div class="space-y-6 text-lg leading-relaxed">
+  <h3 class="text-2xl font-semibold mb-2 text-yellow-500">My Tech Journey</h3>
+  <p>I discovered my passion for technology in high school. After i Completed my high School, i joined Zetech University in September 2022. <br>
+    I created my first website at the age of 18, which sparked my love for coding and innovation. <br>
+    I have Created several projets including an e-commerce Website , Crime prediction System etc. 
+  </p>
+
+  <p>Via Curiosity  I Joined e-Mobilis Technology Institute where i'm constantly expanding my skills in web development, Artificial Intelligence and software engineering.
+     I enjoy building real-world solutions through code.<br>
+    </p> 
+ 
+     <p class="text-xl leading-relaxed">
+      My love for problem-solving and creativity pushes me to build meaningful projects and I’m always looking for new opportunities to grow.Thats Moses 
+     </p>
+
+
+<!-- Fun Facts Section (Birthday Styled 🎂) -->
+<div class="mt-10 space-y-6 bg-gradient-to-r from-pink-100 via-yellow-100 to-purple-100 p-6 rounded-2xl shadow-2xl border border-pink-300 animate-fade-in max-w-2xl mx-auto">
+  <h3 class="text-3xl font-bold text-center text-pink-600 mb-6">
+    🎉 Some Fun Facts About Me 🎈
+  </h3>
+
+  <!-- Fav Song -->
+<div class="flex items-center justify-between bg-white bg-opacity-80 p-4 rounded-xl shadow hover:shadow-lg transition">
+  <div class="flex items-center space-x-3">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-pink-500 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6h13M5 6v13H3V6a1 1 0 011-1h1z" />
+    </svg>
+    <p class="text-lg font-medium text-gray-800">🎶 Fav Song : You Mean To Tell Me</p>
+  </div>
+  <button 
+    onclick="document.getElementById('songModal').classList.remove('hidden')" 
+    class="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 shadow-md font-semibold transition">
+    ▶️ Play
+  </button>
+</div>
+
+<!-- Fav Song Modal -->
+<div id="songModal" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center hidden z-50">
+  <div class="bg-white p-6 rounded-xl relative shadow-xl w-[90%] max-w-2xl">
+    <!-- Close Button -->
+    <button 
+      onclick="document.getElementById('songModal').classList.add('hidden')" 
+      class="absolute top-2 right-2 text-gray-600 hover:text-red-600 text-2xl font-bold px-3 py-1 rounded">
+      ×
+    </button>
+    <!-- Modal Content -->
+    <h2 class="text-center text-2xl font-bold text-purple-600 mb-4">Moses' Favorite Song 🎧</h2>
+    <div class="aspect-w-16 aspect-h-9">
+      <iframe 
+        src="https://www.youtube.com/embed/gGNz40x1YRE" 
+        title="You Mean To Tell Me"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen
+        class="w-full h-64 rounded-lg">
+      </iframe>
+    </div>
+  </div>
+</div>
+
+
+<!-- Fav Food -->
+<div class="flex items-center justify-between bg-white bg-opacity-80 p-4 rounded-xl shadow hover:shadow-lg transition">
+  <div class="flex items-center space-x-3">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-black animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12h-6M9 12H3m12-4l4 4m0 0l-4 4m4-4H5" />
+    </svg>
+    <p class="text-lg font-medium text-gray-800">🍕 Fav Food: Chicken</p> <!-- Changed to pizza -->
+  </div>
+  <button 
+    onclick="document.getElementById('foodImageModal').classList.remove('hidden')" 
+    class="bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 shadow-md font-semibold transition">
+     See Image
+  </button>
+</div>
+
+
+<!-- Fav Food Modal -->
+<div id="foodImageModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+  <div class="bg-white p-6 rounded-lg relative">
+    <button 
+      onclick="document.getElementById('foodImageModal').classList.add('hidden')" 
+      class="absolute top-2 right-2 text-gray-600 hover:text-red-600 text-xl font-bold bg-gray-100 px-3 py-1 rounded">
+      ×
+    </button>
+    <h2 class="text-center text-2xl font-bold text-yellow-500 mb-4">Moses' Favorite Food 🍗</h2>
+    <img src="static/favfood.jpg" alt="Chicken" class="max-w-full max-h-60 rounded mb-4 shadow-md mx-auto">
+  </div>
+</div>
+
+<!-- Fav Color -->
+<div class="flex items-center justify-between bg-white bg-opacity-80 p-4 rounded-xl shadow hover:shadow-lg transition">
+  <div class="flex items-center space-x-3">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-black animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12h-6M9 12H3m12-4l4 4m0 0l-4 4m4-4H5" />
+    </svg>
+    <p class="text-lg font-medium text-gray-800">🎨 Fav Color: Black</p>
+  </div>
+  <button 
+    onclick="document.getElementById('colorImageModal').classList.remove('hidden')" 
+    class="bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 shadow-md font-semibold transition">
+    🖤 See Me
+  </button>
+</div>
+
+<!-- Fav Color Modal -->
+<div id="colorImageModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+  <div class="bg-white p-6 rounded-lg relative">
+    <button 
+      onclick="document.getElementById('colorImageModal').classList.add('hidden')" 
+      class="absolute top-2 right-2 text-gray-600 hover:text-red-600 text-xl font-bold bg-gray-100 px-3 py-1 rounded">
+      ×
+    </button>
+    <h2 class="text-center text-2xl font-bold text-yellow-500 mb-4">Moses' Favorite Color😍 🍗</h2>
+    <img src="static/black.jpg" alt="Black Color" class="max-w-full max-h-60 rounded mb-4 shadow-md mx-auto">
+  </div>
+</div>
+
+<!-- Hobby -->
+<div class="flex items-center justify-between bg-white bg-opacity-80 p-4 rounded-xl shadow hover:shadow-lg transition">
+  <div class="flex items-center space-x-3">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-blue-500 animate-float" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12h-6M9 12H3m12-4l4 4m0 0l-4 4m4-4H5" />
+    </svg>
+    <p class="text-lg font-medium text-gray-800">🏊‍♂️ Hobby: Swimming</p>
+  </div>
+  <button 
+    onclick="document.getElementById('swimModal').classList.remove('hidden')" 
+    class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 shadow-md font-semibold transition">
+    🏊 See Me
+  </button>
+</div>
+
+<!-- Hobby Modal -->
+<div id="swimModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+  <div class="bg-white p-6 rounded-lg relative">
+    <button 
+      onclick="document.getElementById('swimModal').classList.add('hidden')" 
+      class="absolute top-2 right-2 text-gray-600 hover:text-red-600 text-xl font-bold bg-gray-100 px-3 py-1 rounded">
+      ×
+    </button>
+    <h2 class="text-center text-2xl font-bold text-yellow-500 mb-4">Moses' Favorite Hobby</h2>
+    <img src="static/swimming.jpg" alt="Swimming" class="max-w-full max-h-60 rounded mb-4 shadow-md mx-auto">
+  </div>
+</div>
+
+  <!-- Picture -->
+  <div class="flex justify-center items-center mt-10">
+    <div class="text-center">
+      <img src="static/Moses.jpg" alt="Moses" class="mx-auto rounded-full w-32 h-32 object-cover border-4 border-pink-500 shadow-xl animate-bounce-slow">
+      <p class="mt-3 text-xl text-pink-700 font-bold">Happy  Birthday Moses! 🎂</p>
+    </div>
+  </div>
+</div> 
+</section>  
+
+
+<!-- Gallery / Memories -->
+<section id="memories" class="py-20 bg-cover bg-center" style="background-image: url('static/b1.jpeg');">
+  <div class="max-w-screen-xl mx-auto px-6 text-white">
+    <h2 class="text-4xl font-extrabold text-center mb-12 drop-shadow-md">My  Gallery</h2>
+
+    <div class="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      
+      <!-- Memory 1 -->
+      <div class="rounded-xl bg-white/10 backdrop-blur-md shadow-xl p-4">
+        <img src="static/shoot3.jpg" class="w-full object-contain max-h-[400px] mx-auto rounded-lg mb-4" alt="Throwback to April 2022 after high school">
+        <div class="text-center">
+          <p class="text-xl font-bold text-white">Just Me</p>
+          <p class="text-sm text-gray-200 mt-1">📅 April 2023 </p>
+          <p class="text-sm text-gray-200">📍 Nairobi County</p>
+        </div>
+      </div>
+
+      <!-- Memory 2 -->
+      <div class="rounded-xl bg-white/10 backdrop-blur-md shadow-xl p-4">
+        <img src="static/Mem3.jpg" class="w-full object-contain max-h-[400px] mx-auto rounded-lg mb-4" alt="Throwback to April 2022 after high school">
+        <div class="text-center">
+          <p class="text-xl font-bold text-white">Suited & Smart</p>
+          <p class="text-sm text-gray-200 mt-1">📅 April 2024 </p>
+          <p class="text-sm text-gray-200">📍 Kiambu County</p>
+        </div>
+      </div>
+
+      <!-- Memory 3 -->
+      <div class="rounded-xl bg-white/10 backdrop-blur-md shadow-xl p-4">
+        <img src="static/shoot1.jpg" class="w-full object-contain max-h-[400px] mx-auto rounded-lg mb-4" alt="Throwback to April 2022 after high school">
+        <div class="text-center">
+          <p class="text-xl font-bold text-white">CEO Energyy</p>
+          <p class="text-sm text-gray-200 mt-1">📅 May 2025 </p>
+          <p class="text-sm text-gray-200">📍 Kiambu County</p>
+        </div>
+      </div>
+
+      <!-- Memory 4 -->
+      <div class="rounded-xl bg-white/10 backdrop-blur-md shadow-xl p-4">
+        <img src="static/Mem1.jpg" class="w-full object-contain max-h-[400px] mx-auto rounded-lg mb-4" alt="Throwback to April 2022 after high school">
+        <div class="text-center">
+          <p class="text-xl font-bold text-white">With My Sister Joy</p>
+          <p class="text-sm text-gray-200 mt-1">📅 April 2022 (after High School ifykyk) 😂😫</p>
+          <p class="text-sm text-gray-200">📍 Murang'a County</p>
+        </div>
+      </div>
+
+     <!-- Memory 5 -->
+     <div class="rounded-xl bg-white/10 backdrop-blur-md shadow-xl p-4">
+      <img src="static/Moses Kuria.jpg" class="w-full object-contain max-h-[400px] mx-auto rounded-lg mb-4" alt="Varsity Mentor Camp1 2025">
+      <div class="text-center">
+        <p class="text-xl font-bold text-white">Solo Frame</p>
+        <p class="text-sm text-gray-200 mt-1">📅 April 2025 (Google Annual Camp) </p>
+        <p class="text-sm text-gray-200">📍 Nairobi County</p>
+      </div>
+    </div>
+
+     <!-- Memory 6 -->
+     <div class="rounded-xl bg-white/10 backdrop-blur-md shadow-xl p-4">
+      <img src="static/shoot2.jpg" class="w-full object-contain max-h-[400px] mx-auto rounded-lg mb-4" alt="Research and Innovation week 2024">
+      <div class="text-center">
+        <p class="text-xl font-bold text-white">Just Me</p>
+        <p class="text-sm text-gray-200 mt-1">📅 March 2025 </p>
+        <p class="text-sm text-gray-200">📍 Kiambu County</p>
+      </div>
+    </div>
+    </div>
+    <div class="mt-8 text-center">
+      <a href="more-photos.html" class="inline-block bg-purple-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-purple-700 transition">
+        📸See More Photos 📸
+      </a>
+    </div>
+    
+  </div>
+</section>
+
+
+
+
+
+<!-- Special People / Testimonials -->
+<section id="people" class="py-16 bg-white">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center text-purple-700 mb-10">People And Testimonials💬</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+
+      <!-- Testimonial 1: Dad -->
+        <div class="p-6 bg-purple-50 rounded-xl shadow-lg text-center flex flex-col min-h-[450px]">
+           <img src="static/testimonials/dad.jpg" class="w-24 h-24 rounded-full mx-auto mb-4">
+           <h3 class="text-lg font-semibold">DAD</h3>
+            <p class="text-sm mt-2">
+              Moses, I may not always say much, but I see you. From that little boy who used to follow me around with a million questions to the man you are becoming—nĩ wega mũno. I remember how you used to "fix" broken radios and leave behind more parts than you started with 😂. But you’ve grown, son. Umejijenga, na tunaona. I'm proud of you, and I pray for your journey ahead. Happy birthday mwana wakwa.
+            </p>
+             <div class="mt-auto">
+               <a href="https://wa.me/254113229108" target="_blank" class="mt-4 inline-block px-4 py-2 bg-green-500 text-white rounded-full hover:bg-green-600 transition">
+                  Message Mr Kuria on WhatsApp
+               </a>
+              </div>
+        </div>
+
+        
+      <!-- Testimonial 2: Mum -->
+      <div class="p-6 bg-purple-50 rounded-xl shadow-lg text-center flex flex-col min-h-[450px]">
+        <img src="static/testimonials/mum.jpg" class="w-24 h-24 rounded-full mx-auto mb-4">
+        <h3 class="text-lg font-semibold">MOM</h3>
+        <p id="mom-testimony" class="text-sm mt-2">
+          Mose nĩwe mwana ũmwe ũrĩa nderete na wedo na ngumoo mũno.😅
+           Nĩndĩraririkana e munini dokagĩra tene kumenya kana mwana nĩ arĩte na nĩ tũngĩathekire twĩta famĩly tondũ 
+           watwĩraga tũgũtuge ta mũthamaki.  aarĩtũrĩaga nĩ arĩ kuuga atetahana mũthithu—na nĩ atetahana na kĩa kĩa rĩrĩ. Kũrang’ĩra unga thĩini na shuga matiganĩ-inĩ, nĩ egwatĩrĩire mũthithu... hamwe na wendo!<br>
+          Mwana wakwa, nĩngenaga na ngarũhiya  tondũ wa mũndũ ũrĩa ũtuĩkĩte. Ngũkwedĩtheria wedo mũĩngĩ ũgikinyioa mĩaka  21, mwenda wakwa.
+        </p>
+        <div class="mt-auto space-y-2">
+          <button onclick="translateText()" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-full">Translate</button>
+          <a href="https://wa.me/254113229108" target="_blank" class="inline-block px-4 py-2 bg-green-500 text-white rounded-full hover:bg-green-600 transition">
+            Message Waciku on WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Testimonial 3: Siz Joy -->
+      <div class="p-6 bg-purple-50 rounded-xl shadow-lg text-center flex flex-col min-h-[450px]">
+        <img src="static/testimonials/joy.jpg" class="w-24 h-24 rounded-full mx-auto mb-4">
+        <h3 class="text-lg font-semibold">Joy Kuria</h3>
+        <p class="text-sm mt-2">
+          Wueeh! Gai fafa, guess who's becoming old? My brother . Juzi tu nilikuwa nakubeba 😂 Btw I sometimes remember how we used to face some rope strokes from mum😂😂. How you used to say me to mum "Mum Joy ni kuhabata" 😂 AAAAhhh! How you used to show me form three maths saaizo uko class 5 😂😫 Nakupenda our last born 🥺❤️ <br>
+          Na umekuwa mkubwa. Nakupenda sana My Love. You're more than a brother to me. <br> Happy  birthday! 🥳
+        </p>
+        <div class="mt-auto">
+          <a href="https://wa.me/254705594325" target="_blank" class="mt-4 inline-block px-4 py-2 bg-green-500 text-white rounded-full hover:bg-green-600 transition">
+            Message Joy on WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Testimonial 4: Siz Mary -->
+      <div class="p-6 bg-purple-50 rounded-xl shadow-lg text-center flex flex-col min-h-[450px]">
+        <img src="static/testimonials/mary.jpg" class="w-24 h-24 rounded-full mx-auto mb-4">
+        <h3 class="text-lg font-semibold">Mary Kuria</h3>
+        <p class="text-sm mt-2">
+          From not knowing how to write his name to coding. Saa hii unaandika code mpaka na symbols za ajabu ajabu! As you celebrate your birthday, I wish you all the best. Your niece and nephews are proud to have an uncle like you. Nakupenda bro wangu wa mwisho. Umetoka mbali na bado unaenda mbali. Happy Birthday 🎉❤️🔥
+        </p>
+        <div class="mt-auto">
+          <a href="https://wa.me/254712625653" target="_blank" class="mt-4 inline-block px-4 py-2 bg-green-500 text-white rounded-full hover:bg-green-600 transition">
+            Message Mary on WhatsApp
+          </a>
+        </div>
+      </div>
+
+
+     <!-- Testimonial 5: Mose -->
+      <div class="p-6 bg-purple-50 rounded-xl shadow-lg text-center flex flex-col min-h-[450px]">
+        <img src="static/Mem20.jpg" class="w-24 h-24 rounded-full mx-auto mb-4">
+        <h3 class="text-lg font-semibold">Moses Njuguna</h3>
+         <p class="text-sm mt-2">
+           I’ve come far, and the best is yet to come.  Happy birthday to me 💻🔥<br><br>
+            To the kid who used to fake stomach aches to avoid school—you made it, bro aslo not eating githeri in High School. I'm now the one people run to when they need help... or Wi-Fi 😅. I pray to Keep going and growing. Happy Birthday to me! 🎉🧠💪
+         </p>
+        <div class="mt-auto">
+          <a href="https://wa.me/254793589963" target="_blank" class="mt-4 inline-block px-4 py-2 bg-green-500 text-white rounded-full hover:bg-green-600 transition">
+            Message Moses on WhatsApp
+          </a>
+        </div>
+      </div>
+
+
+       <!-- Testimonial 6 peris -->
+      <div class="p-6 bg-purple-50 rounded-xl shadow-lg text-center flex flex-col min-h-[450px]">
+        <img src="static/testimonials/peris.jpg" class="w-24 h-24 rounded-full mx-auto mb-4">
+        <h3 class="text-lg font-semibold">Peris Nyambura</h3>
+        <p class="text-sm mt-2">
+         From being shy and antisocial to becoming a strong and a confident person.
+         From the very first day we met in our first year on campus, 
+         we have been through so many highs and lows together. 
+         And through it all, you’ve been more than just a friend.
+         You have been a blessing to me knowing that i have a bestfriend  who has my back.
+         I’m so grateful and I really appreciate so much🙏😍🫂. May the Almighty Lord continue blessing and uplifting you.
+         Happpy 21 <th>st</th> birthday 🥳🥳 and to many more years of making unforgettable memories,friendship and  goodlife❣❣
+        </p>
+        <div class="mt-auto">
+          <a href="https://wa.me/254795657389" target="_blank" class="mt-4 inline-block px-4 py-2 bg-green-500 text-white rounded-full hover:bg-green-600 transition">
+            Message Peris on WhatsApp
+          </a>
+        </div>
+      </div>
+
+
+      <!-- Testimonial 7: Nephew -->
+      <div class="p-6 bg-purple-50 rounded-xl shadow-lg text-center flex flex-col min-h-[450px]">
+           <img src="static/testimonials/brian.jpg" class="w-24 h-24 rounded-full mx-auto mb-4" alt="Moses' Nephew">
+          <h3 class="text-lg font-semibold">Brian Kiarie</h3>
+        <p class="text-sm mt-2">
+            Uncle Mose, you’re my hero! I used to brag at school that my uncle is a real coder who makes websites and apps.😂😂 
+            I want to be like you one day🥺. Happy Birthday Uncle i'm proud to have you as my mentor and someone to look upto!
+             I hope you'll enjoy your day. Much love Uncle! ❤️🎮👨‍💻
+        </p>
+       <div class="mt-auto">
+         <a href="https://wa.me/254729253625" target="_blank" class="mt-4 inline-block px-4 py-2 bg-green-500 text-white rounded-full hover:bg-green-600 transition">
+              Message Brian on WhatsApp
+         </a>
+       </div>
+     </div>
+
+
+     <!-- Testimonial: 8 -->
+          <div class="p-6 bg-purple-50 rounded-xl shadow-lg text-center flex flex-col min-h-[450px]">
+               <img src="static/testimonials/ian.jpg" class="w-24 h-24 rounded-full mx-auto mb-4" alt="Primary Friend">
+                 <h3 class="text-lg font-semibold">Ian Nyoike</h3>
+                <p class="text-sm mt-2">
+                  It feels like just the other day we were chasing tires barefoot and sharing mandazis during break 😂😂 
+                  You’ve grown bruv  and I’m proud of the person you’ve become. 
+                  Happy Birthday Moseee! May joy and good things follow you always. More life, more memories. 🙌🏽🎉
+               </p>
+              <div class="mt-auto">
+                   <a href="https://wa.me/2547113514201" target="_blank" class="mt-4 inline-block px-4 py-2 bg-green-500 text-white rounded-full hover:bg-green-600 transition">
+                     Message Ian on WhatsApp
+                   </a>
+             </div>
+          </div>
+
+  </div>
+  </div>
+</section>
+
+
+
+<!-- Wishes Guestbook -->
+<section id="wishes" class="relative py-24 bg-cover bg-center" style="background-image: url('static/b1.jpeg'); background-size: cover;">
+  <div class="absolute inset-0 bg-black bg-opacity-50 z-0"></div>
+  <div class="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
+    <h2 class="text-4xl font-bold mb-6">Leave a Birthday Wish For Moses✨</h2>
+    
+    <!-- Personal Birthday Note -->
+    <p class="text-xl mb-4 leading-relaxed">
+      Today, <strong>June 5th, 2025</strong>, I turn <strong>21 years old</strong> — a milestone I'm incredibly grateful for. From the carefree days of my childhood, to surviving high school and now shaping my path in tech and life, every birthday has carried its own meaning.
+      <br><br>
+      I’ve learned a lot in these years i.e. about people, purpose and the power of never giving up. Through every up and down, laughter and lesson, I’ve grown into someone I’m proud of becoming.
+      <br><br>
+      This birthday isn’t just about getting older, it’s about appreciating how far I’ve come... and how far I still dream to go. Here’s to more challenges, more growth, more wins, and of course more cake! 🎂🥳
+    </p>
+    
+    <p class="text-lg mb-6 italic">
+      I still remember celebrating my 16th with soda and biscuits 😂, my 18th with friends under the stars, and now... this one, with YOU all here. So whether you've known me forever or just stumbled upon this page — take a second to wish me something kind 🥹🎉. <br> Will Appreciate
+    </p>
+
+    <!-- NGL link button -->
+    <a href="https://ngl.link/moses72142" target="_blank" class="inline-block bg-purple-600 hover:bg-purple-700 text-white py-3 px-6 rounded-full text-lg mb-4">
+      📩 Send Me a Wish Anonymously
+    </a>
+
+    <!-- Buy Me a Cake Button -->
+<button onclick="togglePopup()" class="inline-block bg-yellow-500 hover:bg-yellow-600 text-white py-3 px-6 rounded-full text-lg">
+  🎂 Buy Me a Cake
+</button>
+
+<!-- Hidden Popup -->
+<div id="cakePopup" class="hidden fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
+  <div class="bg-white text-black p-8 rounded-2xl shadow-2xl max-w-md text-center relative">
+    <button onclick="togglePopup()" class="absolute top-2 right-2 text-gray-600 hover:text-black text-2xl">&times;</button>
+    <img src="static/cake.jpg" alt="Cake" class="w-32 h-32 mx-auto mb-4 rounded-full border-4 border-yellow-500">
+    <h3 class="text-2xl font-bold mb-2">My M-PESA Numbers 📲</h3>
+    <p class="mb-1"><strong>0113229108  - Moses Kuria</strong></p>
+    <p class="mb-4"><strong>0793589963   - Grace Kuria</strong></p>
+    <p>All The Numbers Are Mine</p>
+    <p class="text-green-700 font-medium">A little appreciation goes a long way. God bless you abundantly.🙏❤️</p>
+  </div>
+</div>
+
+    <!-- Optional motivational or cheeky message -->
+    <p class="text-sm text-purple-200 mt-2">Make the anonymous message  sweet, spicy or silly..... I'll read them all 🤭💌</p>
+  </div>
+</section>
+
+
+<!-- Wishlist Section -->
+<section id="wishlist" class="py-20 bg-cover bg-center text-white" style="background-image: url('static/b1.jpeg'); background-size: cover;">
+  <div class="bg-black bg-opacity-60 inset-0 absolute w-full h-full z-0"></div>
+  
+  <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
+    <h2 class="text-4xl font-bold mb-4">My Wishlist 🎁</h2>
+    <p class="text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
+      As I celebrate my 21 st birthday, I thought it’d be fun to dream a little . If you'd like to surprise me, here's what would truly light me up! Any contribution big or small, will mean the world. 🎉✨
+    </p>
+
+    <div class="grid md:grid-cols-3 gap-6 text-gray-800">
+      <!-- 🎧 SMrtwatch -->
+      <div class="bg-pink-100 p-6 rounded-xl shadow-lg flex flex-col justify-between h-full">
+        <div>
+          <img src="static/gift1.jpg" alt="Smartwatch" class="rounded mb-4"> <!-- Replace with actual smartwatch image URL -->
+          <h3 class="font-semibold text-lg">⌚ Smartwatch</h3>
+          <p class="text-sm text-gray-700 mb-6">For time fitness ⏰</p>
+        </div>
+        <button onclick="showGiftPopup('⌚ Smartwatch')" class="mt-auto bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded-full text-sm">
+          Help Me Get This 🎁
+        </button>
+      </div>
+      
+
+      <!-- 🧥 Custom Hoodie -->
+      <div class="bg-pink-100 p-6 rounded-xl shadow-lg flex flex-col justify-between h-full">
+        <div>
+          <img src="static/gift2.jpg" alt="Custom Hoodie" class="rounded mb-4">
+          <h3 class="font-semibold text-lg">🧥 Custom Hoodie</h3>
+          <p class="text-sm text-gray-700 mb-6"> I just love the hoodie 😎</p>
+        </div>
+        <button onclick="showGiftPopup('🧥 Custom Hoodie')" class="mt-auto bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded-full text-sm">
+          Help Me Get This 🎁
+        </button>
+      </div>
+
+      <!-- Official Shoes -->
+      <div class="bg-pink-100 p-6 rounded-xl shadow-lg flex flex-col justify-between h-full">
+        <div>
+          <img src="static/gift3.jpg" alt="Official shoes" class="rounded mb-4">
+          <h3 class="font-semibold text-lg">👟 Official Shoes</h3>
+          <p class="text-sm text-gray-700 mb-6">time has come whereby i've to cutt off sneakers a little bit and start official wears </p>
+        </div>        
+        <button onclick="showGiftPopup('👟 Official Shoes')" class="mt-auto bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded-full text-sm">
+          Help Me Get This 🎁
+        </button>
+      </div>
+    </div>
+  </div>
+
+ <!-- Gift Popup Modal -->
+<div id="giftPopup" class="hidden fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-[9999]">
+  <div class="bg-white p-8 rounded-2xl text-center relative max-w-sm w-full mx-auto text-gray-800 shadow-2xl">
+    <button onclick="hideGiftPopup()" class="absolute top-2 right-2 text-gray-500 text-xl hover:text-black">&times;</button>
+    <h3 class="text-xl font-bold mb-4" id="giftTitle">🎁 Gift Title</h3>
+    <p class="mb-2">To contribute, kindly send via M-PESA:</p>
+    <p class="text-purple-700 font-bold text-lg">0113229108</p>
+    <p>or</p>
+    <p class="text-purple-700 font-bold text-lg mb-4">0793589963</p>
+    <p class="text-green-600 text-sm">A little kindness goes a long way😊 — may God bless you abundantly! 🙏❤️</p>
+  </div>
+</div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-16 bg-gray-100" style="background-image: url('static/b1.jpeg'); background-size: cover; background-position: center;">
+  <div class="max-w-5xl mx-auto px-6 bg-white bg-opacity-80 p-10 rounded-xl shadow-lg">
+    <div class="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0">
+      
+      <!-- Left Side - Contact Info -->
+      <div class="flex-1 text-center md:text-left space-y-6">
+        <h2 class="text-3xl font-bold text-purple-800">Get in Touch with Moses</h2>
+        <p class="text-gray-700">I’d really love to hear from you! Feel free to reach out through any of the following ways:</p>
+        
+        <div class="space-y-4">
+          <!-- Email -->
+          <div class="flex items-center space-x-3 justify-center md:justify-start">
+            <svg class="w-6 h-6 text-purple-800" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16 4H8a4 4 0 00-4 4v8a4 4 0 004 4h8a4 4 0 004-4V8a4 4 0 00-4-4z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M22 6l-10 7L2 6" />
+            </svg>
+            <a href="mailto:njugunahmoses448@gmail.com" class="text-gray-700 hover:text-purple-800">njugunahmoses448@gmail.com</a>
+          </div>
+          
+          <!-- Phone -->
+          <div class="flex items-center space-x-3 justify-center md:justify-start">
+            <svg class="w-6 h-6 text-purple-800" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.6a1 1 0 01.9.55l1.2 2.4a1 1 0 01-.1 1L9 9a11 11 0 005 5l1.1-1.1a1 1 0 011-.1l2.4 1.2a1 1 0 01.55.9V19a2 2 0 01-2 2h-.5C8.59 21 3 15.41 3 8.5V8a2 2 0 012-2z" />
+            </svg>
+            <a href="tel:+254793589963" class="text-gray-700 hover:text-purple-800">+254 793 589 963</a>
+          </div>
+
+          <!-- WhatsApp -->
+          <div class="flex items-center space-x-3 justify-center md:justify-start">
+            <svg class="w-6 h-6 text-green-500" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12.004 2.002c-5.523 0-10 4.477-10 10 0 1.664.408 3.23 1.123 4.617L2 22l5.486-1.437A9.946 9.946 0 0012.004 22c5.523 0 10-4.477 10-10s-4.477-9.998-10-9.998zm.001 18.164a8.135 8.135 0 01-4.07-1.102l-.29-.171-3.254.854.87-3.173-.185-.298a8.153 8.153 0 01-1.102-4.09c0-4.507 3.67-8.176 8.18-8.176 4.51 0 8.18 3.669 8.18 8.176 0 4.509-3.67 8.18-8.18 8.18zm4.176-6.219c-.229-.115-1.351-.665-1.56-.74-.209-.075-.362-.114-.514.114-.152.229-.589.739-.721.891-.133.152-.266.171-.495.057-.229-.115-.966-.355-1.838-1.132-.68-.607-1.14-1.356-1.274-1.585-.133-.229-.014-.352.1-.467.103-.103.229-.266.343-.399.114-.133.152-.229.229-.381.076-.152.038-.285-.019-.399-.057-.114-.514-1.237-.703-1.695-.185-.445-.375-.381-.514-.381h-.438c-.152 0-.4.057-.61.285-.209.229-.8.781-.8 1.902 0 1.12.82 2.204.934 2.354.114.152 1.62 2.476 3.932 3.473 1.379.595 1.917.647 2.61.552.419-.057 1.351-.552 1.541-1.085.19-.533.19-.991.133-1.085-.057-.095-.21-.152-.438-.267z"/>
+            </svg>
+            <a href="https://wa.me/254793589963" target="_blank" class="text-gray-700 hover:text-purple-800">Chat on WhatsApp</a>
+          </div>
+
+          <!-- Anonymous Messaging -->
+          <div class="pt-4">
+            <a href="https://ngl.link/moses72142" target="_blank" class="inline-block bg-pink-600 hover:bg-pink-700 text-white py-2 px-5 rounded-full font-semibold shadow-lg">
+              💌 Send Me Anonymous Message
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side - Contact Form -->
+      <div class="flex-1 space-y-6">
+        <h2 class="text-3xl font-bold text-purple-800 text-center md:text-left">Send a Message</h2>
+        <form id="contact-form" class="space-y-4">
+          <input type="text" id="name" placeholder="Your Name " class="w-full p-4 rounded-lg border border-gray-300" required>
+          <input type="email" id="email" placeholder="Your Email " class="w-full p-4 rounded-lg border border-gray-300" required>
+          <input type="text" id="subject" placeholder="Subject " class="w-full p-4 rounded-lg border border-gray-300" required>
+          <textarea id="message" placeholder="Your Message  " rows="4" class="w-full p-4 rounded-lg border border-gray-300" required></textarea>
+          <div class="flex justify-center">
+            <button type="submit" class="bg-purple-600 hover:bg-purple-700 text-white py-3 px-6 rounded-full">Send Message</button>
+          </div>
+          <p>Dear Techies use send anonymous Message Button to send a message- backend means is still in production</p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- footer --><!-- footer -->
+<footer class="bg-purple-900 text-white py-6 text-center">
+  <p>&copy; 2025 <span class="font-semibold">Moses Njuguna</span> | Built for My Birthday 🎉</p>
+  <p>
+    Website Designed & Maintaned By
+    <button 
+      onclick="document.getElementById('socialModal').classList.remove('hidden')" 
+      class=" text-yellow-400 hover:text-blue-400 font-semibold ml-1">
+     Moses_Njugunah
+    </button>
+  </p>
+</footer>
+
+
+<!-- Modal -->
+<div id="socialModal" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center hidden z-50">
+  <div class="bg-white p-8 rounded-lg shadow-lg w-11/12 max-w-md relative">
+    
+    <!-- Close Button -->
+    <button 
+      onclick="document.getElementById('socialModal').classList.add('hidden')" 
+      class="absolute top-2 right-2 text-gray-500 hover:text-red-500 text-xl font-bold">
+      ×
+    </button>
+
+    <h2 class="text-xl font-semibold text-center mb-4 text-purple-700">Reach To Me Via The Following Social Media Handles. <br> Feel free to follow i'll follow back.</h2>
+    
+    <!-- Social Icons Grid -->
+    <div class="grid grid-cols-4 gap-4 justify-items-center">
+      <a href="https://www.linkedin.com/in/moses-njuguna-068286281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="LinkedIn">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" class="w-8 h-8">
+      </a>
+      <a href="https://github.com/" target="_blank" title="GitHub">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="w-8 h-8">
+      </a>
+      <a href="https://x.com/KuriahMoses2?t=dlvJ5J3HHRuzihwnTkwufQ&s=09" target="_blank" title="Twitter/X">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="X" class="w-8 h-8">
+      </a>
+      <a href="https://www.instagram.com/moses_njugunah?igsh=Z2FsajltZWZmdWFh" target="_blank" title="Instagram">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" class="w-8 h-8">
+      </a>
+      <a href="https://www.tiktok.com/@mose_njugunah?_t=ZM-8w0IJ69lFmI&_r=1" target="_blank" title="TikTok">
+        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046122.png" alt="TikTok" class="w-8 h-8">
+      </a>
+      <a href="https://www.facebook.com/mosee.despersee.7" target="_blank" title="Facebook">
+        <img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="Facebook" class="w-8 h-8">
+      </a>
+      <a href="https://www.snapchat.com/add/mn5000w?share_id=7u4pOtBqlYo&locale=en-US" target="_blank" title="Snapchat">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733635.png" alt="Snapchat" class="w-8 h-8">
+      </a>
+      <a href="https://youtube.com/@mosesnjuguna-wg4cb?si=pxVqBtHYRNSkssFl" target="_blank" title="YouTube">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" class="w-8 h-8">
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+   <!--Java Script -->
+  <!-- Countdown Script -->
+  <script>
+    
+    function speakMessage() {
+  const message = new SpeechSynthesisUtterance(
+    "Hi there! You've reached the A.I. assistant of Moses . Feel free to text, call, or surprise him with a cake or even some birthday money! Today is his special day. You can send your gift to M-Pesa number zero seven ninety three, five eighty nine, nine sixety three. Thank you and make his day memorable!"
+  );
+
+  // Get the voices
+  const voices = window.speechSynthesis.getVoices();
+
+  // Try to select a female-sounding voice
+  const preferredVoice = voices.find(voice =>
+    voice.name.toLowerCase().includes('female') ||
+    voice.name.toLowerCase().includes('samantha') ||
+    voice.name.toLowerCase().includes('google us english') ||
+    (voice.lang === 'en-US' && voice.name.toLowerCase().includes('english'))
+  );
+
+  if (preferredVoice) {
+    message.voice = preferredVoice;
+  }
+
+  message.lang = 'en-US';
+  message.rate = 1;
+  message.pitch = 1.3; // Higher pitch for more feminine tone
+
+  window.speechSynthesis.speak(message);
+}
+
+
+
+ // Function to open the modal
+ function openSongModal() {
+    document.getElementById('songModal').classList.remove('hidden'); // Show the modal
+  }
+
+  // Function to close the modal
+  function closeSongModal() {
+    document.getElementById('songModal').classList.add('hidden'); // Hide the modal
+  }
+
+
+function showGiftPopup(giftName) {
+    document.getElementById('giftTitle').innerText = giftName;
+    document.getElementById('giftPopup').classList.remove('hidden');
+  }
+
+  function hideGiftPopup() {
+    document.getElementById('giftPopup').classList.add('hidden');
+  }
+
+function togglePopup() {
+    const popup = document.getElementById('cakePopup');
+    popup.classList.toggle('hidden');
+  }
+
+function translateText() {
+    const textElement = document.getElementById('mom-testimony');
+    const currentText = textElement.innerHTML;
+    
+    // This is a simple toggle for English and Kikuyu, you can replace this logic with actual translation APIs
+    if (currentText.includes('Mose nĩwe mwana')) {
+      textElement.innerHTML = `
+        Moses, you're the only son I've raised with so much love and pride. 😅 I used to wake up to make sure you were fed, and we would laugh as you said I should always treat you like a king. I remember the days we made dough and sugar treats, oh, what a lovely time!
+        <br> My boy, I’m so proud of the man you’ve become. Happy 21st Birthday My Love
+      `;
+    } else {
+      textElement.innerHTML = `
+        Mose nĩwe mwana ũmwe ũrĩa nderete na wedo na ngumoo mũno.😅
+        Nĩndĩraririkana e munini dokagĩra tene kumenya kana mwana nĩ arĩte na nĩ tũngĩathekire twĩta famĩly tondũ 
+         watwĩraga tũgũtuge ta mũthamaki.  aarĩtũrĩaga nĩ arĩ kuuga atetahana mũthithu—na nĩ atetahana na kĩa kĩa rĩrĩ. Kũrang’ĩra unga thĩini na shuga matiganĩ-inĩ, nĩ egwatĩrĩire mũthithu... hamwe na wendo!<br>
+          Mwana wakwa, nĩngenaga na ngarũhiya  tondũ wa mũndũ ũrĩa ũtuĩkĩte. Ngũkwedĩtheria wedo mũĩngĩ ũgikinyioa mĩaka  21, mwenda wakwa.
+      
+      `;
+    }
+  }
+
+
+  // JavaScript to handle form submission
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the form from refreshing the page
+
+    // Get values from the form fields
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+
+    // Simple validation
+    if (name && email && subject && message) {
+      alert('Message not Sent! Use Send Me Anonymous Messages to Send a Message, Thanks');
+
+      // You can use AJAX or any API to actually send the message to your server here
+    } else {
+      alert('Please fill all the fields.');
+    }
+  });
+
+    const countdownTimer = document.getElementById("countdown-timer");
+    const birthday = new Date("June 5, " + new Date().getFullYear() + " 00:00:00").getTime();
+    const interval = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = birthday - now;
+
+      if (distance < 0) {
+        countdownTimer.innerHTML = '<span class="text-green-600">🎉Yaaaaaaaay It\'s Today! Happy Birthday Moses! 🎉</span>';
+        clearInterval(interval);
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const secs = Math.floor((distance % (1000 * 60)) / 1000);
+
+      countdownTimer.innerHTML = `
+        <span>${days}d</span>
+        <span>${hours}h</span>
+        <span>${mins}m</span>
+        <span>${secs}s</span>
+      `;
+    }, 1000);
+  </script>
+
+</body>
+</html>
